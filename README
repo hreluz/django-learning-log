@@ -1,2 +1,5 @@
 # Create a django project
-django-admin startproject learning_log .
+    django-admin startproject learning_log .
+
+# For running the migrations
+    python manage.py migrate
