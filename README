@@ -9,3 +9,9 @@
 
 # Creating an app
     python manage.py startapp learning_logs
+
+# Generates the migration files for an app
+    python manage.py makemigrations learning_logs
+
+# For running the migrations
+    python manage.py migrate
