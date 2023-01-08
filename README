@@ -18,3 +18,20 @@
 
 # Create a superuser
      python manage.py createsuperuser
+
+# Django shell
+    python manage.py shell
+
+        # List all the topics
+        from learning_logs.models import Topic
+        topics = Topic.objects.all()
+        for topic in topics:
+            print(topic.id, topic)
+
+        # Find specific Topic by id
+        t = Topic.objects.get(id=3)
+        t.text
+        t.date_added
+
+        # Check entries related to that specific topic
+        t.entry_set.all()
