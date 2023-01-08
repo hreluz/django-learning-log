@@ -3,3 +3,6 @@
 
 # For running the migrations
     python manage.py migrate
+
+# Running the server
+    python manage.py runserver
