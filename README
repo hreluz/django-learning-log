@@ -15,3 +15,6 @@
 
 # For running the migrations
     python manage.py migrate
+
+# Create a superuser
+     python manage.py createsuperuser
