@@ -1,0 +1,2 @@
+# Create a django project
+django-admin startproject learning_log .
