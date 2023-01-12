@@ -35,3 +35,6 @@
 
         # Check entries related to that specific topic
         t.entry_set.all()
+
+# Create users app
+    python manage.py startapp users
