@@ -10,6 +10,7 @@ def index(request):
     """The home page for Learning log"""
     return render(request, 'learning_logs/index.html')
 
+
 @login_required
 def topics(request):
     """Show all topics"""
@@ -26,6 +27,7 @@ def topic(request, topic_id):
     return render(request, 'learning_logs/topic.html', context)
 
 
+@login_required
 def new_topic(request):
     """"Add a new topic"""
     if request.method != 'POST':
@@ -43,6 +45,7 @@ def new_topic(request):
     return render(request, 'learning_logs/new_topic.html', context)
 
 
+@login_required
 def new_entry(request, topic_id):
     """Ad a new entry for a particular topic."""
     topic = Topic.objects.get(id=topic_id)
@@ -64,6 +67,7 @@ def new_entry(request, topic_id):
     return render(request, 'learning_logs/new_entry.html', context)
 
 
+@login_required
 def edit_entry(request, entry_id):
     """Edit an existing entry."""
     entry = Entry.objects.get(id=entry_id)
