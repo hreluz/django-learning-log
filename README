@@ -38,3 +38,8 @@
 
 # Create users app
     python manage.py startapp users
+
+
+# Deploy to heroku
+    pip install psycopg2-binary
+    pip install django-on-heroku
